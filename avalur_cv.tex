@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+
+\usepackage{mathtext}         % если нужны русские буквы в формулах (не обязательно)
+\usepackage[T2A]{fontenc}     % внутренняя T2A кодировка TeX
+\usepackage[russian]{babel}   % включение переносов
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\pagestyle{empty} % нумерация выкл.
+\addtolength{\textheight}{1.75in}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{setspace}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\usepackage{fontawesome}	% иконки скайпа, телефона, ... http://ctan.sharelatex.com/tex-archive/fonts/fontawesome/doc/fontawesome.pdf
+
+\newif\ifdetailed
+
+% для полной версии резюме — detailedtrue, для сокращенной — detailedfalse
+\detailedtrue
+%\detailedfalse
+
+\ifdetailed
+% в полной версии много букв, поэтому поплотнее
+\setstretch{0.8}
+\fi
+
+\begin{document}
+
+\noindent {\sffamily{\Huge{\textbf{   Александр Авдюшенко   }}}}%
+
+\vspace{0.5em}
+
+\noindent Новосибирск, Россия $\bullet$ \href{mailto:ovalur@gmail.com}{ovalur@gmail.com} \faMobile~+7 913 718 53 78 \faSendO~ovalur
+% \faGithub
+
+\vspace{0.5em}
+\hrule
+\vspace{1.0em}
+
+\ifdetailed
+\noindent {\textbf{Цель}}: работать в стабильной IT-компании старшим аналитиком, руководителем группы аналитиков или менеджером технических проектов. Предпочитаю работать в интернет-проектах или образовании, но открыт для других возможностей и задач.
+\else
+\noindent {\textbf{Цель}}: старший аналитик или руководитель группы аналитиков.
+\fi
+
+\vspace{1em}
+
+\noindent {\textbf{Опыт работы}}
+\begin{longtable} {l | p{0.85\textwidth}}
+
+2015 — н.в. & {\textbf{\href{https://yandex.ru/sprav/main}{Яндекс.Справочник}, аналитик}} \\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item реализовал ежедневный расчет поатрибутной (публикуемость, название, адрес, время работы...) метрики точности базы организаций Яндекса.
+	\item автоматизировал, оптимизировал и поддерживал процессы актуализации данных в колл-центрах и в Толоке. В частности, на 20\% улучшил эффективность актуализации, применив catboost для предсказания вероятности закрытия организации.
+	\item дважды повысил точность организаций Справочника на 2-3\%, выделив из потерь наиболее крупные проблемы и исправив их. Во-первых, это <<контур недозвонов>> из компаний с недоступными телефонами. Во-вторых, повысил точность времени работы организаций на 5\% за счет приоритетной актуализации найденных проблемных срезов базы.
+\end{itemize}
+\\
+\else
+& \vspace{-1em} {Дважды повысил точность организаций Справочника на 2-3\%. Автоматизировал, оптимизировал и поддерживал процессы актуализации данных
+в колл-центрах и в Толоке. Работа в группе из 6 человек, разработка на Java, SQL, Python, немного catboost и С++.} \\
+\fi
+
+
+2013 — н.в. & {\textbf{\href{https://yandexdataschool.ru}{Яндекс, Школа анализа данных}, куратор академических программ}} \\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item запустил филиал ШАД в Новосибирске. C 2016 по 2018 гг. в сумме 16 выпускников.
+	\item в 2017 г в сотрудничестве с компанией Jetbrains расширили филиал ШАДа до \href{https://compscicenter.ru}{Computer science center}.
+\end{itemize}
+\\
+\else
+& \vspace{-1em} {В 2013 г запустил филиал ШАД в Новосибирске (с 2016 по 2018 гг. в сумме 16 выпускников). В 2017 г в сотрудничестве с компанией Jetbrains расширили филиал ШАДа до \href{https://compscicenter.ru}{Computer science center}}. \\
+\fi
+
+
+2009 — 2015 & {\textbf{\href{http://www.ict.nsc.ru}{Институт вычислительных технологий СО РАН}, аспирант, научный сотрудник}}\\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item обобщил на нестационарную геометрию метод решения трехмерных уравнений Рейнольдса движения несжимаемой жидкости.
+	\item ускорил расчеты в 16 раз, распараллелив алгоритм по блокам расчетной области с использованием MPI для процессов с распределенной памятью (улучшение имеющегося в лаборатории комплекса программ на языке Fortran, $\sim$30 тыс. строк кода).
+	\item ускорил ещё в 7 раз, распараллелив алгоритм в одном блоке с использованием OpenMP-потоков с общей памятью.
+	\item опубликовал 19 научных работ (4 статьи, 13 тезисов, 2 патента), защитив в итоге кандидатскую <<Новые численные модели гидродинамики турбомашин>>.
+\end{itemize}
+\\
+\else
+& \vspace{-1em} {Разработал новую численную модель, учитывающую изменение геометрии проточного тракта во времени. Ускорил расчеты имеющимся в лаборатории комплексом программ на языке Fortran в 16 раз (MPI по блокам), и ещё в 7 раз (OpenMP-потоки внутри блока). Защитил кандидатскую диссертацию.} \\
+\fi
+
+\ifdetailed
+2008 — 2014 & {\href{http://sesc.nsu.ru}{СУНЦ НГУ}, преподаватель математики}\\
+2006 — 2017 & {организатор и член Жюри математических олимпиад: Всероссийская, Всесибирская, Турнир городов}\\
+2010 — н.в. & {\href{https://sites.google.com/site/sovenoknsk/}{мат. кружок Совёнок}, организатор и преподаватель}\\
+\fi
+
+\end{longtable}
+
+\ifdetailed
+\noindent {\textbf{Навыки}}
+\begin{longtable} {p{0.5\textwidth}p{0.5\textwidth}}
+\vspace{-2em}
+\begin{itemize}
+	\item Python (numpy, scikit-learn, matplotlib)
+	\item Java (spring, hibernate, immutables)
+	\item linux, git, ipython notebook
+	\item SQL, MapReduce, MPI, OpenMP
+\end{itemize}
+& 
+\vspace{-2em}
+\begin{itemize}
+	\item machine learning (catboost, SVM, RF)
+	\item алгоритмы, структуры данных
+	\item математика (матстат, анализ, алгебра)
+	\item русский: родной, английский: intermediate, французский: base
+\end{itemize}
+\\
+\end{longtable}
+\fi
+
+\vspace{-2em}
+
+\ifdetailed
+\noindent {\textbf{Образование}}
+\begin{longtable} {c|p{0.4\textwidth}|p{0.25\textwidth}|l} 
+2013 — 2016	& \href{https://yandexdataschool.ru/about/graduates/yearbook/2016}{Школа анализа данных, Яндекс} & IT & выпускник \\
+2009 — 2014	& \href{http://www.ict.nsc.ru/ru/education/postgraduate}{аспирантура ИВТ СО РАН} & мат.методы & к.ф.-м.н \\
+2003 — 2009	& \href{}{НГУ, механико-математический факультет} & математика & магистр \\
+2017	& Programming Languages, parts A, B, C. & Coursera, \newline University of Washington & 	сертификат \\
+\end{longtable}
+\fi
+
+\end{document}             % End of document.
