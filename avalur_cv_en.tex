@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+
+\usepackage{mathtext}         % если нужны русские буквы в формулах (не обязательно)
+\usepackage[T2A]{fontenc}     % внутренняя T2A кодировка TeX
+\usepackage[russian]{babel}   % включение переносов
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\pagestyle{empty} % нумерация выкл.
+\addtolength{\textheight}{1.75in}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{setspace}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\usepackage{fontawesome}	% иконки скайпа, телефона, ... http://ctan.sharelatex.com/tex-archive/fonts/fontawesome/doc/fontawesome.pdf
+
+\newif\ifdetailed
+
+% для полной версии резюме — detailedtrue, для сокращенной — detailedfalse
+\detailedtrue
+%\detailedfalse
+
+\ifdetailed
+% в полной версии много букв, поэтому поплотнее
+\setstretch{0.8}
+\fi
+
+\begin{document}
+
+\noindent {\Huge{\textbf{   Aleksandr Avdiushenko   }}}%
+
+\vspace{0.5em}
+
+\noindent Saint-Petersburg, Russia $\bullet$ \href{mailto:ovalur@gmail.com}{ovalur@gmail.com} \faMobile~+7 913 718 53 78 \faSendO~ovalur
+% \faGithub
+
+\vspace{0.5em}
+\hrule
+\vspace{1.0em}
+
+\noindent {\textbf{Work experience}}
+\begin{longtable} {l | p{0.85\textwidth}}
+
+2019 — present & {\textbf{\href{https://spbu.ru}{Saint Petersburg State University}, Department of Mathematics and Computer Science, Associate Professor}} \\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item 2019 — in cooperation with Yandex, launched the bachelor's program in Mathematics, Algorithms and Data Analysis
+\end{itemize}
+\\
+\else
+& \vspace{-1em}
+\begin{itemize}
+	\item 2019 — in cooperation with Yandex, launched the bachelor's program in Mathematics, Algorithms and Data Analysis
+\end{itemize}
+\\
+\fi
+
+2013 — present & {\textbf{\href{https://compscicenter.ru}{Yandex, CS center/School of Data Science}, Academic Program Manager}} \\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item 2013 — launched a branch \href{https://yandexdataschool.ru}{SDS} in Novosibirsk. From 2016 to 2018 a total of 16 graduates
+	\item 2017 — in cooperation with JetBrains, expanded the SDS branch to \href{https://compscicenter.ru}{Computer science center}
+\end{itemize}
+\\
+\else
+& {In 2013 launched a branch \href{https://yandexdataschool.ru}{SDS} in Novosibirsk. From 2016 to 2018 a total of 16 graduates. In 2017 in cooperation with JetBrains, expanded the SDS branch to \href{https://compscicenter.ru}{Computer science center}.} \\
+\\
+\fi
+
+
+2015 — 2018 & {\textbf{\href{https://yandex.ru/sprav/main}{Yandex.Sprav}, analyst}} \\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item implemented a daily calculation of the attribute-metrics (publicity, name, address, working time...) of accuracy of the Yandex organizations database
+	\item automated and optimized data update processes in call centers and in \href{https://toloka.yandex.ru}{Yandex.Toloka}. In particular improved the effectiveness of updating by 20\%, using catboost to predict the likelihood of closing an organization
+	\item two times increased the accuracy of the organizations database by 2\% and 3\%, highlighting the largest problems from the losses and correcting them. Firstly, fixed companies with inaccessible phones. Secondly, increased the accuracy of the time of work of organizations by their priority updating
+\end{itemize}
+\\
+\else
+& {Two times increased the accuracy of the organizations database by 2\% and 3\%. Automated and optimized data update processes in call centers and in \href{https://toloka.yandex.ru}{Yandex.Toloka}. Worked in a group of six people, development in Java, SQL, Python, a little bit of C++; catboost.} \\
+\\
+\fi
+
+
+2009 — 2015 & {\textbf{\href{http://www.ict.nsc.ru}{Institute of Computational Technologies SB RAS}, graduate student, researcher}}\\
+\ifdetailed
+& \vspace{-1em}
+\begin{itemize}
+	\item generalized to non-stationary geometry the method of solving the three-dimensional Reynolds equations of motion of an incompressible fluid
+	\item accelerated calculations by 16 times, parallelizing the algorithm across blocks of the computational domain using MPI for processes with distributed memory (improvement of the Fortran software package available in the laboratory, $\sim$ 30 thousand lines of code)
+	\item accelerated another 7 times, parallelizing the algorithm in one block using OpenMP-threads with shared memory
+	\item published 19 scientific papers (4 articles, 13 theses, 2 patents), eventually defending a PhD thesis <<New numerical models of hydrodynamics of turbomachines >> (in Russian)
+\end{itemize}
+\\
+\else
+& {Developed a new numerical model that takes into account the change in the geometry of the flow path over time. Accelerated calculations by the Fortran language software package available in the laboratory by 16 times (MPI per block), and another 7 times (OpenMP flows inside the block). Defended PhD thesis.} \\
+\\
+\fi
+
+\ifdetailed
+2008 — 2014 & {\href{http://sesc.nsu.ru}{SESC NSU}, math teacher}\\
+2006 — 2017 & {organizer and member of the Jury of Mathematical Olympiads: All-Russian, All-Siberian, Tournament of cities}\\
+2010 — 2013 & {\href{https://sites.google.com/site/sovenoknsk/}{math club <<Sovenok>>}, organizer and teacher}\\
+\fi
+
+\end{longtable}
+
+\ifdetailed
+\noindent {\textbf{Skills}}
+\begin{longtable} {p{0.5\textwidth}p{0.5\textwidth}}
+\vspace{-2em}
+\begin{itemize}
+	\item Python (numpy, scikit-learn, matplotlib)
+	\item Java (spring, hibernate, immutables)
+	\item linux, git, ipython notebook
+	\item SQL, MapReduce, MPI, OpenMP
+\end{itemize}
+& 
+\vspace{-2em}
+\begin{itemize}
+	\item machine learning (catboost, SVM, RF)
+	\item algorithms, data structures
+	\item math statistics, analysis, algebra
+	\item Russian: native, English: intermediate, French: débutant
+\end{itemize}
+\\
+\end{longtable}
+\fi
+
+\vspace{-2em}
+
+\ifdetailed
+\noindent {\textbf{Education \vspace{-0.5em}}}
+\begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l} 
+2013 — 2016	& \href{https://yandexdataschool.ru/about/graduates/yearbook/2016}{School of Data Science, Yandex} & programming, machine learning & graduate \vspace{0.5em}\\
+2009 — 2014	& \href{http://www.ict.nsc.ru/ru/education/postgraduate}{Graduate School of ICT SB RAS} & math modeling, numerical methods & PhD \vspace{0.5em}\\
+2003 — 2009	& \href{https://www.nsu.ru/n/mathematics-mechanics-department/}{NSU, Department of Mechanics and Mathematics} & math & master \vspace{0.5em}\\
+\end{longtable}
+
+\vspace{2em}
+\noindent {\textbf{Courses \vspace{-0.5em}}}
+\begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l} 
+2017	& Coursera, University of Washington & Programming Languages, parts A, B, C & 	certificate \vspace{0.5em}\\
+\end{longtable}
+\fi
+
+\end{document}             % End of document.
