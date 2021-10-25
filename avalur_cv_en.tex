@@ -19,12 +19,7 @@
 
 % для полной версии резюме — detailedtrue, для сокращенной — detailedfalse
 \detailedtrue
-%\detailedfalse
-
-\ifdetailed
-% в полной версии много букв, поэтому поплотнее
-\setstretch{0.8}
-\fi
+% \detailedfalse
 
 \begin{document}
 
@@ -46,35 +41,46 @@
 \ifdetailed
 & \vspace{-1em}
 \begin{itemize}
-	\item 2019 — in cooperation with Yandex, launched the bachelor's program in Mathematics, Algorithms and Data Analysis
+	\item 2019 — head of the new educational program for bachelor's degree \href{https://maad.compscicenter.ru}{<<Data Science>>} (before 2021 <<Mathematics, algorithms and data analysis>>), created in cooperation with Yandex at the Mathematics and Computer Science department of St. Petersburg State University.
+
+    The program combines fundamental mathematics education with the study of modern programming and machine learning. Students are offered research topics related to the developments of leading companies in the field of information technology. It immediately became popular among motivated applicants: in 2019, the competition was about 25 people per position, all budget positions were filled with winners of Olympiads in mathematics and computer science, including the final stage of the All-Russian Olympiad for schoolchildren and the International Olympiad in Mathematics (IMO).
+
+    \item 2019-2020 — created from scratch with a grant from the Ministry of Education of the Russian Federation \href{https://gsom.spbu.ru/all_news/event2021-02-04/}{International Scientific and Methodological Center of St. Petersburg State University}
+
+    In 2019-2020, I led the team of the Mathematics and Computer Science Department in a joint project with the Graduate School of Management of St. Petersburg State University project of the International Scientific and Methodological Center of St. Petersburg State University (ISMC).
+
+    The ISMC concept was to create and implement advanced training and retraining programs for teachers, teaching materials, active involvement of the best Russian and foreign experts at all stages of work and, as a result, the formation, support and development of a professional community of university teachers.
+
+    In total, 123 people were involved in the implementation of the project, including 61 candidates of sciences or PhD (50\%) and 24 doctors of sciences (20\%). The project team not only successfully coped with the challenges that arose in the context of the COVID-19 pandemic, quickly restructuring and fulfilling the planned, but also turned them to the benefit of the project, carrying out intensive training of scientific and pedagogical workers and graduate students of Russian educational organizations from all over the country.
+
+    In 2020, within the framework of the ISMC, two advanced training programs, two internship programs, one professional retraining program and one school in mathematics and computer science were conducted for teachers of universities in the Russian Federation. In total, more than 1,500 people from more than 50 cities and 60 universities in Russia were trained at the events of the ISMC. The events received a warm response from the community, and the graduates of the center are happy to use the acquired knowledge and methodological materials in their work.
+
+    \item 2020-2021 — co-director and teacher of the traditional \href{https://sochisirius.ru/obuchenie/nauka/smena747/3603}{<<January Scientific School of Mathematics and Programming>>}
+
+    \item 2021 — all budget positions of the Data Science program are filled with winners of All-Russian Olympiads, including two winners of the International Olympiad in Mathematics
+
 \end{itemize}
 \\
 \else
-& \vspace{-1em}
-\begin{itemize}
-	\item 2019 — in cooperation with Yandex, launched the bachelor's program in Mathematics, Algorithms and Data Analysis
-\end{itemize}
+& {In 2019, I launched an educational bachelor's program \href{https://maad.compscicenter.ru}{<<Data Science>>}, which immediately became popular among the best applicants in Russia. In 2020, I created from scratch with a grant from the Ministry of Education of the Russian Federation \href{https://gsom.spbu.ru/all_news/event2021-02-04/}{International Scientific and Methodological Center of St. Petersburg State University}. I read \href{https://github.com/spbu-math-cs/ml-course-2021/}{1 year machine learning course} and teach traditional \href{https://sochisirius.ru/obuchenie/nauka/ smena747 / 3603}{training sessions in Sirius}.}\\
 \\
 \fi
-
+\\
 2013 — present & {\textbf{\href{https://compscicenter.ru}{Yandex, CS center/Yandex Data School}, Academic Programs Manager}} \\
 \ifdetailed
-& \vspace{-1em}
-\begin{itemize}
+& \begin{itemize}
 	\item 2013 — launched a branch \href{https://yandexdataschool.ru}{Yandex Data School} in Novosibirsk. From 2016 to 2018 a total of 16 graduates
 	\item 2017 — in cooperation with JetBrains, expanded the Yandex Data School branch to \href{https://compscicenter.ru}{Computer science center}
+	\item 2019 — co-leader and lecturer at \href{https://sochisirius.ru/obuchenie/graduates/smena240/1174}{<<Intensive project workshop for developers from Sirius, Yandex and the HSE CS>>}
 \end{itemize}
 \\
 \else
-& {In 2013 launched a branch \href{https://yandexdataschool.ru}{Yandex Data School} in Novosibirsk. From 2016 to 2018 a total of 16 graduates. In 2017 in cooperation with JetBrains, expanded the Yandex Data School branch to \href{https://compscicenter.ru}{Computer science center}.} \\
-\\
+& {In 2013 launched a branch \href{https://yandexdataschool.ru}{Yandex Data School} in Novosibirsk. From 2016 to 2018 a total of 16 graduates. In 2017 in cooperation with JetBrains, expanded the Yandex Data School branch to \href{https://compscicenter.ru}{Computer science center}. In 2019 I organized \href{https://sochisirius.ru/obuchenie/graduates/smena240/1174}{<<Intensive project workshop for developers from Sirius, Yandex and the HSE department of computer science>>}} \\
 \fi
-
-
-2015 — 2018 & {\textbf{\href{https://yandex.ru/sprav/main}{Yandex.Sprav}, analyst}} \\
+\\
+2015 — 2018 & {\textbf{\href{https://yandex.ru/}{Yandex}, analyst}} \\
 \ifdetailed
-& \vspace{-1em}
-\begin{itemize}
+& \begin{itemize}
 	\item implemented a daily calculation of the attribute-metrics (publicity, name, address, working time...) of accuracy of the Yandex organizations database
 	\item automated and optimized data update processes in call centers and in \href{https://toloka.yandex.ru}{Yandex.Toloka}. In particular improved the effectiveness of updating by 20\%, using catboost to predict the likelihood of closing an organization
 	\item two times increased the accuracy of the organizations database by 2\% and 3\%, highlighting the largest problems from the losses and correcting them. Firstly, fixed companies with inaccessible phones. Secondly, increased the accuracy of the time of work of organizations by their priority updating
@@ -84,7 +90,6 @@
 & {Two times increased the accuracy of the organizations database by 2\% and 3\%. Automated and optimized data update processes in call centers and in \href{https://toloka.yandex.ru}{Yandex.Toloka}. Worked in a group of six people, development in Java, SQL, Python, a little bit of C++; catboost.} \\
 \\
 \fi
-
 
 2009 — 2015 & {\textbf{\href{http://www.ict.nsc.ru}{Institute of Computational Technologies SB RAS}, graduate student, researcher}}\\
 \ifdetailed
@@ -97,7 +102,7 @@
 \end{itemize}
 \\
 \else
-& {Developed a new numerical model that takes into account the change in the geometry of the flow path over time. Accelerated calculations by the Fortran language software package available in the laboratory by 16 times (MPI per block), and another 7 times (OpenMP flows inside the block). Defended PhD thesis.} \\
+& {Developed a new numerical model that takes into account the change in the geometry of the flow path over time. Accelerated calculations by the Fortran language software package available in the laboratory by 16 times (MPI per block), and another 7 times (OpenMP flows inside the block). I made \href{https://github.com/avalur/dissertation/blob/master/to_print/autoref_Avdyushenko.pdf}{PhD thesis (in russian)}.} \\
 \\
 \fi
 
@@ -122,30 +127,33 @@
 & 
 \vspace{-2em}
 \begin{itemize}
-	\item machine learning (catboost, SVM, RF)
+	\item machine learning (catboost, SVM)
 	\item algorithms, data structures
-	\item math statistics, analysis, algebra
+	\item math: analysis, numerical methods
 	\item Russian: native, English: intermediate, French: débutant
 \end{itemize}
 \\
 \end{longtable}
+\newpage
 \fi
 
-\vspace{-2em}
-
-\ifdetailed
-\noindent {\textbf{Education \vspace{-0.5em}}}
+\noindent {\textbf{Education}
 \begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l} 
 2013 — 2016	& \href{https://yandexdataschool.ru}{Yandex Data School} & machine learning, programming & graduate \vspace{0.5em}\\
 2009 — 2014	& \href{http://www.ict.nsc.ru/ru/education/postgraduate}{Graduate School of ICT SB RAS} & math modeling, numerical methods & PhD \vspace{0.5em}\\
 2003 — 2009	& \href{https://www.nsu.ru/n/mathematics-mechanics-department}{NSU, Department of Mechanics and Mathematics} & math & master \vspace{0.5em}\\
 \end{longtable}
 
-\vspace{2em}
-\noindent {\textbf{Courses \vspace{-0.5em}}}
+\ifdetailed
+\noindent {\textbf{Online courses}
 \begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l} 
-2017	& Coursera, University of Washington & Programming Languages, parts A, B, C & 	certificate \vspace{0.5em}\\
+2017 & Coursera, University of Washington & Programming Languages, parts A, B, C & 	certificate \vspace{0.5em}\\
+2019 & Coursera, HSE University & How to Win a Data Science Competition: Learn from Top Kagglers & certificate \vspace{0.5em}\\
 \end{longtable}
 \fi
+
+\noindent{\textbf{Out of work}}
+
+I like to spend time with my wife and daughter, I try to do sports regularly (running, climbing) whenever possible and I have the \href{https://www.instagram.com/ovalur/}{Insragram}
 
 \end{document}             % End of document.
