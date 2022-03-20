@@ -1,3 +1,3 @@
 # CV Avdyushenko
 
-In Russian, in English and normal and detailed forms.
+Four variants: in Russian, in English and each normal or detailed form.
