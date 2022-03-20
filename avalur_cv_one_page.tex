@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+
+\usepackage{mathtext}         % если нужны русские буквы в формулах (не обязательно)
+\usepackage[T2A]{fontenc}     % внутренняя T2A кодировка TeX
+\usepackage[russian]{babel}   % включение переносов
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\pagestyle{empty} % нумерация выкл.
+\addtolength{\textheight}{1.75in}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{setspace}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\usepackage{fontawesome}	% иконки скайпа, телефона, ... http://ctan.sharelatex.com/tex-archive/fonts/fontawesome/doc/fontawesome.pdf
+
+
+\begin{document}
+
+\noindent {\Huge{\textbf{Александр Авдюшенко}}}%
+
+\vspace{0.5em}
+
+\noindent Санкт-Петербург, Россия $\bullet$ \href{mailto:ovalur@gmail.com}{ovalur@gmail.com} \faMobile~+7 913 718 53 78 \faSendO~ovalur
+% \faGithub
+
+\vspace{0.5em}
+\hrule
+\vspace{0.5em}
+
+\noindent {\textbf{Опыт работы}}
+\begin{longtable} {l | p{0.85\textwidth}}
+2019 — н.в. & {\textbf{\href{https://spbu.ru}{Санкт-Петербургский государственный университет}, Факультет математики и компьютерных наук, доцент и руководитель программы по анализу данных}} \\
+
+& {В 2019 запустил образовательную программу бакалавриата \href{https://maad.compscicenter.ru}{<<Науки о данных>>}, сразу ставшей популярной среди самых лучших абитуриентов России. В 2020 создал с нуля на грант министерства образования РФ \href{https://gsom.spbu.ru/all_news/event2021-02-04/}{Международный научно-методический центр СПбГУ}. Читаю \href{https://github.com/spbu-math-cs/ml-course/}{годовой курс по машинному обучению} и провожу традиционные \href{https://sochisirius.ru/obuchenie/nauka/smena1078/5204}{смены в Сириусе}.} \\
+
+2013 — н.в. & {\textbf{\href{https://compscicenter.ru}{Яндекс, CS center/Школа анализа данных}, куратор академических программ}} \\
+
+& {В 2013 запустил филиал ШАД в Новосибирске. В 2017 в сотрудничестве с компанией Jetbrains расширил филиал ШАДа до отделения \href{https://compscicenter.ru}{Computer science center}. В 2019 провел \href{https://sochisirius.ru/obuchenie/graduates/smena240/1174}{<<Интенсивный проектный практикум для разработчиков от Сириуса, Яндекса и ФКН ВШЭ>>}} \\
+
+2015 — 2018 & {\textbf{\href{https://yandex.ru/}{Яндекс}, аналитик-разработчик (data scientist)}} \\
+& {Дважды повысил точность организаций Справочника на 2\% и 3\% (главная цель команды). Автоматизировал и оптимизировал процессы актуализации данных в колл-центрах и в Толоке. Работал в группе из 6 человек: машинное обучение, разработка на Java, SQL, Python, немного С++; catboost.} \\
+
+2009 — 2015 & {\textbf{\href{http://www.ict.nsc.ru}{Институт вычислительных технологий СО РАН}, аспирант, научный сотрудник}}\\
+
+& {Разработал новую численную модель, учитывающую изменение во времени геометрии проточного тракта гидротурбины. Ускорил расчеты имеющимся в лаборатории комплексом программ на языке Fortran в 16 раз (MPI по блокам), и ещё в 7 раз (OpenMP-потоки внутри блока). Защитил \href{https://github.com/avalur/dissertation/blob/master/to_print/autoref_Avdyushenko.pdf}{кандидатскую диссертацию <<Новые численные модели гидродинамики турбомашин>>}.} \\
+
+2008 — 2014 & {\href{http://sesc.nsu.ru}{Специализированный учебно-научный центр НГУ}, преподаватель математики}\\
+2006 — 2017 & {организатор и член Жюри математических олимпиад: Всероссийская, Всесибирская, Турнир городов}\\
+2010 — 2013 & {\href{https://www.sovenok.academy/}{мат. кружок Совёнок}, организатор и преподаватель}\\
+
+\end{longtable}
+
+\noindent {\textbf{Навыки}}
+\begin{longtable} {p{0.5\textwidth}p{0.5\textwidth}}
+\vspace{-2.2em}
+\begin{itemize}
+	\item Python (numpy, scikit-learn, matplotlib)
+	\item Java (spring, hibernate, immutables)
+	\item linux, git, ipython notebook
+	\item SQL, MapReduce, MPI, OpenMP
+\end{itemize}
+&
+\vspace{-2.2em}
+\begin{itemize}
+	\item machine learning (catboost, neural nets)
+	\item алгоритмы, структуры данных
+	\item математика (анализ, численные методы)
+	\item русский: родной, английский: intermediate, французский: débutant
+\end{itemize}
+\\
+\end{longtable}
+
+\vspace{-2.5em}
+
+\noindent {\textbf{Образование \vspace{-0.5em}}}
+\begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l}
+2013 — 2016	& \href{https://yandexdataschool.ru}{Школа анализа данных, Яндекс} & программирование, машинное обучение & выпускник \vspace{0.5em}\\
+2009 — 2014	& \href{http://www.ict.nsc.ru/ru/education/postgraduate}{аспирантура ИВТ СО РАН} & мат. моделирование, численные методы & к.ф.-м.н \vspace{0.5em}\\
+2003 — 2009	& \href{https://www.nsu.ru/n/mathematics-mechanics-department/}{НГУ, механико-математический факультет} & математика & магистр \vspace{0.5em}\\
+\end{longtable}
+
+\vspace{-1.5em}
+
+\noindent {\textbf{Онлайн-курсы \vspace{-0.5em}}}
+\begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l}
+2017 & Coursera, University of Washington & Programming Languages, parts A, B, C & 	сертификат \vspace{0.5em}\\
+2019 & Coursera, HSE University & How to Win a Data Science Competition: Learn from Top Kagglers & сертификат \vspace{0.5em}\\
+\end{longtable}
+
+\vspace{-2.0em}
+
+\noindent {\textbf{Вне работы}}
+
+Люблю проводить время с женой и дочкой, стараюсь по возможности регулярно заниматься спортом (плавание, скалолазание), есть в \href{https://www.instagram.com/ovalur/}{Insragram}
+
+\end{document}

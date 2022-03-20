@@ -15,12 +15,6 @@
 
 \usepackage{fontawesome}	% иконки скайпа, телефона, ... http://ctan.sharelatex.com/tex-archive/fonts/fontawesome/doc/fontawesome.pdf
 
-\newif\ifdetailed
-
-% для полной версии резюме — detailedtrue, для сокращенной — detailedfalse
-\detailedtrue
-%\detailedfalse
-
 \begin{document}
 
 \noindent {\Huge{\textbf{Aleksandr Avdiushenko}}}%
@@ -38,7 +32,6 @@
 \begin{longtable} {l | p{0.85\textwidth}}
 
 2019 — present & {\textbf{\href{https://spbu.ru}{Saint Petersburg State University}, Department of Mathematics and Computer Science, Associate Professor and head of the educational program in <<Data Science>>}} \\
-\ifdetailed
 & \vspace{-1.5em}
 \begin{itemize}
 	\item 2019 — head of the new educational program for bachelor's degree \href{https://maad.compscicenter.ru}{<<Data Science>>}, created in cooperation with Yandex at the Mathematics and Computer Science department of St. Petersburg State University.
@@ -61,14 +54,8 @@ s
 
   \item 2021-2022 — I created and read \href{https://github.com/spbu-math-cs/ml-course/}{one year machine learning course}
 \end{itemize}
-\vspace{-3em}
-\\
-\else
-& {In 2019 I launched an educational bachelor's program \href{https://maad.compscicenter.ru}{<<Data Science>>}, which immediately became popular among the best applicants in Russia. In 2020, I created from scratch  \href{https://gsom.spbu.ru/all_news/event2021-02-04/}{International Scientific and Methodological Center of St. Petersburg State University} (Russian Ministry of Education grant). I created and read \href{https://github.com/spbu-math-cs/ml-course/}{one year machine learning course}.} \\
-\fi
 \\
 2015 — 2018 & {\textbf{\href{https://yandex.ru/}{Yandex}, data scientist}} \\
-\ifdetailed
 & \vspace{-1.5em} \begin{itemize}
 	\item I implemented a daily calculation of the attribute-metrics (existence, name, address, working time...) of accuracy of the Yandex organizations database
 	\end{itemize}
@@ -78,11 +65,7 @@ s
 	\item I increased the accuracy of the organizations database twice by 2\% and 3\%, highlighting the largest problems from the losses and correcting them. Firstly, fixed companies with inaccessible phones. Secondly, increased the accuracy of the time of work of organizations by their priority updating
 \end{itemize}
 \\
-\else
-& {I increased the accuracy of the organizations database twice by 2\% and 3\% (the main goal of the team). I automated and optimized data update processes in call centers and in \href{https://toloka.yandex.ru}{Yandex.Toloka}. I worked in a group of six data scientists: development in Java, SQL, Python, a little bit of C++; catboost.}\\
-\fi
 2013 — present & {\textbf{\href{https://compscicenter.ru}{Yandex, CS center/Yandex Data School}, Academic Programs Manager}} \\
-\ifdetailed
 & \begin{itemize}
 	\item 2013 — I launched a branch \href{https://yandexdataschool.ru}{Yandex Data School} in Novosibirsk
 	\item 2017 — in cooperation with JetBrains, I expanded the Yandex Data School branch to \href{https://compscicenter.ru}{Computer science center}
@@ -90,12 +73,7 @@ s
 	\item 2019 — I organized open \href{https://habr.com/ru/company/JetBrains-education/blog/458042/}{Machine Learning training sessions} for Kaggle competition participants
 \end{itemize}
 \\
-\else
-& {In 2013 I launched a branch \href{https://yandexdataschool.ru}{Yandex Data School} in Novosibirsk. In 2017 in cooperation with JetBrains, I expanded the Yandex Data School branch to \href{https://compscicenter.ru}{Computer science center}. In 2019 I organized open \href{https://habr.com/ru/company/JetBrains-education/blog/458042/}{Machine Learning training sessions} for Kaggle competition participants.} \\
-\fi
-\\
 2009 — 2015 & {\textbf{\href{http://www.ict.nsc.ru}{Institute of Computational Technologies SB RAS}, graduate student, researcher}}\\
-\ifdetailed
 & \vspace{-1em}
 \begin{itemize}
 	\item I generalized to non-stationary geometry the method of solving the three-dimensional Reynolds equations of motion of an incompressible fluid
@@ -104,16 +82,10 @@ s
 	\item I published 19 scientific papers (4 articles, 13 theses, 2 patents), eventually defending a PhD thesis \href{https://github.com/avalur/dissertation/blob/master/to_print/autoref_Avdyushenko.pdf}{<<New numerical models of hydrodynamics of turbomachines>>} (in Russian)
 \end{itemize}
 \\
-\else
-& {I developed a new numerical model that takes into account the change in the geometry of the flow path over time. I accelerated calculations by the Fortran language software package available in the laboratory by 16 times (MPI per block), and another 7 times (OpenMP flows inside the block). I made \href{https://github.com/avalur/dissertation/blob/master/to_print/autoref_Avdyushenko.pdf}{PhD thesis (in russian)}.} \\
-\fi
 
-\ifdetailed
 2008 — 2014 & {\href{http://sesc.nsu.ru}{Specialized Educational and Scientific Center NSU}, math teacher}\\
 2006 — 2017 & {organizer and member of the Jury of Mathematical Olympiads: All-Russian, All-Siberian, Tournament of cities}\\
 2010 — 2013 & {\href{https://www.sovenok.academy/}{math club <<Sovenok>>}, organizer and teacher}\\
-\\
-\fi
 
 \end{longtable}
 
@@ -146,7 +118,8 @@ s
 2003 — 2009	& \href{https://www.nsu.ru/n/mathematics-mechanics-department}{NSU, Department of Mechanics and Mathematics} & math & master \vspace{0.25em}\\
 \end{longtable}
 
-\vspace{-1.5em}
+\newpage
+
 \noindent {\textbf{Online courses}
 \begin{longtable} {cp{0.35\textwidth}p{0.38\textwidth}l}
 2017 & Coursera, University of Washington & Programming Languages, parts A, B, C & 	certificate \vspace{0.5em}\\
@@ -159,4 +132,3 @@ s
 I like to spend time with my wife and daughter, I try to do sports regularly (swimming, climbing) whenever possible and I have the \href{https://www.instagram.com/ovalur/}{Insragram}
 
 \end{document}
-% End of document.
